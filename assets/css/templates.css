@@ -1,0 +1,68 @@
+/* Dynaframe CV Studio v0.2: intentionally different editorial document systems */
+.cv-page{--ink:#192c32;--accent:#167a73;--muted:#68777a;position:relative;box-sizing:border-box;aspect-ratio:210/297;min-height:unset;padding:8.7% 8.5%;font-size:clamp(8px,.87vw,11px);line-height:1.55;color:var(--ink);background:#fff;font-family:'Segoe UI',Arial,sans-serif;overflow:hidden;box-shadow:0 18px 38px #0f28321c;border:1px solid #dfe6e9}
+.cv-page .cv-header{margin:0 0 2.6em;padding:0;border:0;position:relative}
+.cv-page .cv-brandline{font-size:.72em;font-weight:800;letter-spacing:.28em;color:var(--accent);margin-bottom:1.5em}
+.cv-page .cv-brandline span{color:#99a5a7}
+.cv-page .cv-header h1{margin:0;font-size:3.35em;letter-spacing:-.06em;line-height:1.04;text-transform:none;font-weight:800;overflow-wrap:anywhere;color:var(--ink)}
+.cv-page .cv-role{margin:.7em 0 1.4em;text-transform:uppercase;letter-spacing:.19em;font-size:.95em;font-weight:700;color:var(--accent)}
+.cv-page .cv-contact{display:flex;flex-wrap:wrap;gap:.5em 1.5em;border-top:1px solid #dee6e6;padding-top:1.2em;font-size:.91em;color:#4b6269}
+.cv-page .cv-contact-item{display:inline-flex;align-items:center;gap:.45em;min-width:0;overflow-wrap:anywhere}
+.cv-page .cv-contact-item i{font-style:normal;color:var(--accent);font-weight:800}
+.cv-page .cv-section{margin:0 0 2.15em;break-inside:avoid-page}
+.cv-page .cv-section h2{border:0;padding:0;margin:0 0 .9em;text-align:left;font-size:1.08em;line-height:1.4;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:800}
+.cv-page .cv-section h2:after{content:'';display:block;width:2.5em;height:2px;background:var(--accent);margin-top:.48em}
+.cv-page .cv-copy p{margin:0 0 .7em}.cv-page .cv-section ul{padding-left:1.4em;margin:0}.cv-page .cv-section li{padding-left:.2em;margin-bottom:.45em}
+.cv-page .cv-tags{display:flex;gap:.45em;flex-wrap:wrap}.cv-page .cv-tags span{padding:.28em .7em;background:#e9f3f1;color:#245e5b;border-radius:3px;font-size:.92em}
+/* Essential: editorial serif hierarchy with minimal accents */
+.cv-essential{--accent:#326b69;--ink:#19383a;background:linear-gradient(90deg,#e5eeec 0 1.35%,#fff 1.35%)}
+.cv-essential .cv-header h1{font-family:Georgia,serif;font-size:3.5em;font-weight:500;letter-spacing:-.045em}
+.cv-essential .cv-contact{border-color:#a8c4c0}
+/* Executive: premium dark masthead and structured rules */
+.cv-executive{--accent:#ad8551;--ink:#172b37;padding-top:0}
+.cv-executive .cv-header{background:#172b37;color:white;margin-left:-10.25%;margin-right:-10.25%;padding:9% 10.25% 6%;margin-bottom:2.7em}
+.cv-executive .cv-brandline{color:#d9ba8c}.cv-executive .cv-brandline span{color:#8597a1}
+.cv-executive .cv-header h1{color:#fff;font-family:Georgia,serif;font-weight:500;font-size:3.35em;letter-spacing:-.025em}
+.cv-executive .cv-role{color:#e2c49b}.cv-executive .cv-contact{border-color:#435561;color:#e5e8e7}.cv-executive .cv-contact-item i{color:#d9ba8c}
+.cv-executive .cv-section h2{color:#243e4b;border-bottom:1px solid #becbd0;padding-bottom:.5em}.cv-executive .cv-section h2:after{display:none}
+.cv-executive .cv-tags span{background:#f1ece5;color:#6a4e2b}
+/* Modern: visually deliberate dual column with navy skill rail */
+.cv-modern{--accent:#14a7a2;--ink:#102e3b;padding:0}
+.cv-modern .cv-header{background:#eef6f6;margin:0;padding:9% 8% 5%;border-bottom:4px solid #12a19a}
+.cv-modern .cv-header h1{font-weight:800;font-size:3.7em}.cv-modern .cv-role{color:#087e7b}
+.cv-modern .cv-columns{display:grid;grid-template-columns:1.7fr 1fr;min-height:75%;align-items:stretch}
+.cv-modern .cv-main{padding:8% 7% 8% 12%}.cv-modern .cv-side{background:#173c4d;color:#f5fafb;padding:15% 13% 10%}
+.cv-modern .cv-side h2{color:#79d4d0}.cv-modern .cv-side h2:after{background:#79d4d0}.cv-modern .cv-side .cv-tags span{background:#2e5868;color:#f5fcff}
+/* Creative: cream background, large coral display and cream side panel */
+.cv-creative{--accent:#e35a46;--ink:#292b32;background:#fffdf8;padding:0}
+.cv-creative .cv-header{padding:9% 9% 5%;margin:0;position:relative;background:#f7f0e6}
+.cv-creative .cv-brandline{letter-spacing:.22em}.cv-creative .cv-header h1{font-family:Georgia,serif;font-style:italic;font-weight:600;font-size:4.2em;color:#22252c;letter-spacing:-.065em}
+.cv-creative .cv-header:after{content:'';position:absolute;right:0;top:0;width:18%;height:5px;background:#e35a46}
+.cv-creative .cv-role{color:#b53a2b}.cv-creative .cv-columns{display:grid;grid-template-columns:1.55fr 1fr;min-height:74%}
+.cv-creative .cv-main{padding:9% 8% 10% 14%}.cv-creative .cv-side{background:#f4e8da;padding:15% 13% 10%}
+.cv-creative .cv-side .cv-tags span{background:#fffaf4;color:#974237;border:1px solid #ecd5c6}
+/* Classic: formal centered academic resume with hairline rules */
+.cv-classic{--accent:#222;--ink:#171717;font-family:Georgia,'Times New Roman',serif;padding:9% 10%}
+.cv-classic .cv-header{text-align:center;border-bottom:double 3px #222;padding-bottom:1.7em}
+.cv-classic .cv-brandline{font-size:.7em}.cv-classic .cv-header h1{font-size:3em;font-weight:500;letter-spacing:.015em;text-transform:uppercase}
+.cv-classic .cv-role{color:#555;font-size:.91em}.cv-classic .cv-contact{justify-content:center;border:0;padding:0}
+.cv-classic .cv-section h2{letter-spacing:.06em;border-bottom:1px solid #555;padding-bottom:.32em}.cv-classic .cv-section h2:after{display:none}
+.cv-classic .cv-tags span{background:none;border:1px solid #b9b9b9;color:#333;border-radius:0}
+/* ATS: boring on purpose, strictly one text column, no ornamental graphics */
+.cv-ats{--accent:#111;--ink:#111;padding:9% 9%;font-family:Arial,Helvetica,sans-serif}
+.cv-ats .cv-brandline{display:none}.cv-ats .cv-header h1{font-size:2.55em;letter-spacing:0;text-transform:uppercase}
+.cv-ats .cv-role{letter-spacing:0;text-transform:none;color:#222}.cv-ats .cv-contact{border:0;padding:0;gap:.3em 1em}
+.cv-ats .cv-contact-item i{display:none}.cv-ats .cv-section h2{font-size:1em;letter-spacing:0;border-bottom:1px solid #222;padding-bottom:.32em;margin-bottom:.65em}
+.cv-ats .cv-section h2:after{display:none}.cv-ats .cv-section{margin-bottom:1.45em}
+/* Actual miniature layout treatments, not identical placeholder lines */
+.template-thumbnail{position:relative;display:block;width:70px;height:94px;padding:0;overflow:hidden;background:#fff;box-shadow:0 3px 10px #0002;border:1px solid #d8dee1}
+.template-thumbnail:before{content:'';position:absolute;top:16px;left:10px;width:38px;height:6px;background:#273a42;box-shadow:0 13px 0 -2px #98a7a9}
+.template-thumbnail:after{content:'';position:absolute;top:46px;left:10px;right:10px;height:3px;background:#a7b6b7;box-shadow:0 8px #d1d8d9,0 16px #d1d8d9,0 24px #d1d8d9,0 32px #d1d8d9}
+.template-thumbnail i,.template-thumbnail b,.template-thumbnail s{display:none}
+.thumbnail-essential{border-left:4px solid #8fb6b0}.thumbnail-essential:before{font-family:Georgia,serif}
+.thumbnail-executive{border-top:32px solid #172b37}.thumbnail-executive:before{top:-21px;background:#f2e7d3;box-shadow:0 11px 0 -2px #c5a374}.thumbnail-executive:after{top:21px}
+.thumbnail-modern{background:linear-gradient(90deg,#fff 0 64%,#173c4d 64%)}.thumbnail-modern:before{background:#157f7c}.thumbnail-modern:after{right:28px}
+.thumbnail-creative{background:linear-gradient(90deg,#fffdfa 0 64%,#f4e8da 64%);border-top:17px solid #f7f0e6}.thumbnail-creative:before{top:6px;background:#e35a46}.thumbnail-creative:after{right:28px;top:35px}
+.thumbnail-classic:before{left:16px;width:38px;background:#222}.thumbnail-classic:after{top:43px;background:#555}
+.thumbnail-ats:before{background:#111}.thumbnail-ats:after{background:#222;box-shadow:0 8px #aaa,0 16px #aaa,0 24px #aaa,0 32px #aaa}
+@media(max-width:760px){.cv-page{font-size:clamp(7px,1.6vw,10px)}.cv-modern .cv-main,.cv-creative .cv-main{padding-left:10%}}
+@media print{.cv-page{font-size:10.7pt!important;min-height:297mm!important;aspect-ratio:auto!important;width:210mm!important;padding:18mm!important;overflow:visible!important;box-shadow:none!important;border:none!important}.cv-modern,.cv-creative{padding:0!important}.cv-executive{padding-top:0!important}.cv-page .cv-section{break-inside:avoid}.cv-modern .cv-columns,.cv-creative .cv-columns{min-height:235mm}.cv-modern .cv-header,.cv-creative .cv-header{padding:18mm 18mm 11mm}.cv-executive .cv-header{margin-left:-18mm;margin-right:-18mm;padding:18mm}.cv-modern .cv-main,.cv-creative .cv-main{padding:14mm 9mm 14mm 17mm}.cv-modern .cv-side,.cv-creative .cv-side{padding:14mm 9mm}.cv-page{print-color-adjust:exact!important;-webkit-print-color-adjust:exact!important}}
